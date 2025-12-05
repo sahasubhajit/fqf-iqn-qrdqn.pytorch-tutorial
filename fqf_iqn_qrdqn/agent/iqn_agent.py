@@ -90,6 +90,7 @@ class IQNAgent(BaseAgent):
     def calculate_loss(self, state_embeddings, actions, rewards, next_states,
                        dones, weights):
         # Sample fractions.
+        # For N time current state-action quantile
         taus = torch.rand(
             self.batch_size, self.N, dtype=state_embeddings.dtype,
             device=state_embeddings.device)
