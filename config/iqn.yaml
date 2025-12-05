@@ -4,7 +4,7 @@ N: 64 # Equation 2
 N_dash: 64 # Equation 3
 K: 32 #Samples to compute the Q value from Z, Equation 3
 num_cosines: 64 #n in Equation 4
-kappa: 1.0 #Threshold in hubar loss
+kappa: 1.0 #Threshold in huber loss
 lr: 5.e-5
 memory_size: 1000000
 gamma: 0.99
